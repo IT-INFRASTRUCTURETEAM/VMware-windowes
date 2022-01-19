@@ -23,7 +23,7 @@
       - "{{ win_dns2 }}"
     #- vlan: 1234
     #  type: dhcp
-     disk:
+    disk:
     - size_gb: 50
       controller_type: 'SCSI'
       controller_number: 0
