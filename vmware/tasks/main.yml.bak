@@ -9,6 +9,7 @@
     folder: "{{ vmware_new_vm_folder }}"
     datacenter: "{{ ha_datacenter }}"
     cluster: "{{ vmware_cluster_name }}"
+    datastore: "{{ virtual_machine_datastore }}"
     name: "{{ new_vm_name }}"
     template: "{{ template_name }}"
     networks:
