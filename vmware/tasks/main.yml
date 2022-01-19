@@ -30,14 +30,6 @@
       controller_number: 0
       unit_number: 0
     customization:
-      wait_for_ip_address: yes
-      hardware:
-        memory_mb: "{{ RAM }}"
-        num_cpus: "{{ CPU }}"
-        num_cpu_cores_per_socket: 2
-        hotadd_cpu: True
-        hotremove_cpu: True
-        hotadd_memory: True
       autologon: yes
       dns_servers:
       - "{{ win_dns1 }}"
@@ -46,6 +38,15 @@
       password: "{{ new_vm_password }}"
       domainadmin: "{{ ad_admin }}"
       domainadminpassword: "{{ ad_admin_pass }}"
+    wait_for_ip_address: yes
+    hardware:
+       memory_mb: "{{ RAM }}"
+       num_cpus: "{{ CPU }}"
+       num_cpu_cores_per_socket: 2
+       hotadd_cpu: True
+       hotremove_cpu: True
+       hotadd_memory: True
+  delegate_to: localhost
      
       #runonce:
       #- powershell.exe -ExecutionPolicy Unrestricted -File C:\Windows\Temp\ConfigureRemotingForAnsible.ps1 -ForceNewSSLCert -EnableCredSSP
