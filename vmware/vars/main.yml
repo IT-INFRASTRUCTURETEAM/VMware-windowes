@@ -1,0 +1,22 @@
+---
+# vars file for vmware
+vcenter_hostname: "10.50.62.87"
+vcenter_username: "ansible@vsphere.local"
+vcenter_password: "rcD|su._786"
+ha_datacenter: "Central-DC"
+vmware_cluster_name: "HP_Windows2"
+new_vm_name: "windows-2016"
+template_name: "Temp-16-May-20"
+nic_virt_group: "16"
+nic_ip: "10.50.16.71"
+nic_netmask: "255.255.255.0"
+nic_gw: "10.50.16.1"
+win_domain: "jazz.com.pk"
+win_dns1: "10.50.12.11"
+win_dns2: "10.50.12.12"
+new_vm_password: "Mobilink123!@#"
+vmware_new_vm_folder: "Templates"
+ad_admin: "sm.inf2"
+ad_admin_pass: "Kn0ckOFF_786"
+RAM: 2048  # 2 GB
+CPU: 2   # 2 Core
